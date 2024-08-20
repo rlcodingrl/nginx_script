@@ -1,6 +1,6 @@
 console.log(`some info`)
 const modalWrap = document.createElement('div')
-modalWrap.style="position: fixed; min-height: 100vh; z-index: 100000; display: flex; background-color: rgba(0,0,0,0.3); justify-content: space-around; align-items: center; top: 0px; left: 0px; width: 100%;  backdrop-filter: blur(14px);filter: blur(14px);"
+modalWrap.style="position: fixed; min-height: 100vh; z-index: 100000; display: flex; background-color: rgba(0,0,0,0.3); justify-content: space-around; align-items: center; top: 0px; left: 0px; width: 100%;  backdrop-filter: blur(14px);"
 document.body.appendChild(modalWrap);
 modalWrap.classList.add('modalWrap')
 modalWrap.classList.add('displaynone')
@@ -23,12 +23,15 @@ function hideModal() {
     modalWrap.classList.add('displaynone')
 }
 
+function intervalShowModal() {
+    setTimeout(()=>{
+        showModal()
+    },5000)
+}
 
-setTimeout(()=>{
-    showModal()
-},5000)
 
 modalWrap.addEventListener('click',()=>{
     console.log(`hide modal`)
     hideModal()
+    intervalShowModal()
 })
