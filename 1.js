@@ -5,6 +5,7 @@ document.body.appendChild(modalWrap);
 modalWrap.classList.add('modalWrap')
 modalWrap.innerHTML=`
     <div class="hpModal">
-        <img src="https://rlcodingrl.github.io/nginx_script/final_Img.webp">
+        <a href="www.google.com"><img src="https://rlcodingrl.github.io/nginx_script/final_Img.webp"></a>
+        
     </div>
 `
