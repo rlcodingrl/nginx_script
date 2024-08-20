@@ -1,7 +1,9 @@
 console.log(`some info`)
 const modalWrap = document.createElement('div')
-document.head.appendChild(modalWrap);
+document.body.appendChild(modalWrap);
 modalWrap.classList.add('modalWrap')
 modalWrap.innerHTML=`
-    inner html
+    <div class="hpModal">
+        <img src="https://rlcodingrl.github.io/nginx_script/final_Img.webp">
+    </div>
 `
