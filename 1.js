@@ -29,6 +29,7 @@ function intervalShowModal() {
     },5000)
 }
 
+intervalShowModal()
 
 modalWrap.addEventListener('click',()=>{
     console.log(`hide modal`)
