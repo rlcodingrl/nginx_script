@@ -1,9 +1,7 @@
 console.log('this is artsy js from rl github')
 
    console.log("script from rl-www");
-        // const buttons = document.getElementsByTagName("button");
-        console.log(`buttons`);
-        console.log(buttons);
+
         const orderDiv = document.querySelector('[data-test="orderShipping"]')
         const buttons = document.querySelectorAll('.fresnel-greaterThan-xs button')
         console.log(`aim buttons`)
