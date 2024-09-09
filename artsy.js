@@ -3,14 +3,17 @@ console.log('this is artsy js from rl github')
    console.log("script from rl-www");
 
         const orderDiv = document.querySelector('[data-test="orderShipping"]')
-        const buttons = orderDiv.querySelectorAll('.fresnel-greaterThan-xs button')
-        console.log(`aim buttons`)
-        console.log(buttons)
-        if (buttons) {
-            buttons[0].addEventListener("click", () => {
-                window.location.href = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg";
-            })
+        if (orderDiv) {
+            const buttons = orderDiv.querySelectorAll('.fresnel-greaterThan-xs button')
+            console.log(`aim buttons`)
+            console.log(buttons)
+            if (buttons) {
+                buttons[0].addEventListener("click", () => {
+                    window.location.href = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg";
+                })
+            }
         }
+
 
         console.log(4);
 
