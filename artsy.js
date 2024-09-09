@@ -10,8 +10,9 @@ console.log('this is artsy js from rl github')
     }
     
     function checkIfOrderShippingDivExist() {
+        console.log(`checkIfOrderShippingDivExist`)
         orderDiv = document.querySelector('[data-test="orderShipping"]')
-        
+        console.log(orderDiv)
         return orderDiv
     }
     function addELToSaveAndContinueBtn() {
