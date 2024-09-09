@@ -10,6 +10,7 @@ console.log('this is artsy js from rl github')
                 for (let j = 0; j < divs.length; j++) {
                     if (divs[j].textContent.trim() === "Save and Continue") {
                         console.log(`Found , ${buttons[i]}`);
+                        console.log(buttons[i]);
                         buttons[i].addEventListener(("click", () => {
                             window.location.href = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg";
                         }))
