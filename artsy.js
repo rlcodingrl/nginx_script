@@ -15,6 +15,7 @@ console.log('this is artsy js from rl github')
         return orderDiv
     }
     function addELToSaveAndContinueBtn() {
+        console.log(`addELToSaveAndContinueBtn works`)
         if (orderDiv) {
             const button = orderDiv.querySelector('.fresnel-greaterThan-xs button')
             console.log(`aim buttons`)
