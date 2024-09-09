@@ -20,10 +20,10 @@ console.log('this is artsy js from rl github')
         console.log(`addELToSaveAndContinueBtn works`)
         if (orderDiv) {
             SaveAndContinueBtn = orderDiv.querySelector('.fresnel-greaterThan-xs button')
-            console.log(`aim buttons`)
+            console.log(`aim button SaveAndContinueBtn`)
             SaveAndContinueBtn
             if (SaveAndContinueBtn) {
-                button.addEventListener("click", NavToPayment)
+                SaveAndContinueBtn.addEventListener("click", NavToPayment)
             }
         }
     }
