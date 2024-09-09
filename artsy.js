@@ -3,7 +3,7 @@ console.log('this is artsy js from rl github')
    console.log("script from rl-www");
 
         const orderDiv = document.querySelector('[data-test="orderShipping"]')
-        const buttons = document.querySelectorAll('.fresnel-greaterThan-xs button')
+        const buttons = orderDiv.querySelectorAll('.fresnel-greaterThan-xs button')
         console.log(`aim buttons`)
         console.log(buttons)
         if (buttons) {
