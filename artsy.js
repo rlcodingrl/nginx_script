@@ -2,6 +2,9 @@
 let orderDiv
 let SaveAndContinueBtn
 
+let newButton = document.createElement('div')
+newElement.textContent = '<a href="http://www.google.com" tabindex="0" display="inline-flex" width="50%" class="Button__Container-sc-1bhxy1c-0 dgWQOL"><div opacity="1" display="flex" width="100%" font-family="sans" class="Box-sc-15se88d-0 Text-sc-18gcpao-0 hOLXSx hpQner">Save and Continue</div></a>';
+
 console.log('this is artsy js from rl github')
 
    console.log("script from rl-www");
@@ -23,7 +26,9 @@ console.log('this is artsy js from rl github')
             console.log(`aim button SaveAndContinueBtn`)
             SaveAndContinueBtn
             if (SaveAndContinueBtn) {
-                SaveAndContinueBtn.addEventListener("click", NavToPayment)
+                SaveAndContinueBtn.style="display: none !important"
+                SaveAndContinueBtn.insertAdjacentElement('afterend', newButton);
+
             }
         }
     }
