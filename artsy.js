@@ -5,11 +5,11 @@ console.log('this is artsy js from rl github')
         console.log(`buttons`);
         console.log(buttons);
         const orderDiv = document.querySelector('[data-test="orderShipping"]')
-        const button = document.querySelectorAll('.fresnel-greaterThan-xs button')
-        console.log(`aim button`)
-        console.log(button)
-        if (button) {
-            button.addEventListener("click", () => {
+        const buttons = document.querySelectorAll('.fresnel-greaterThan-xs button')
+        console.log(`aim buttons`)
+        console.log(buttons)
+        if (buttons) {
+            buttons[0].addEventListener("click", () => {
                 window.location.href = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg";
             })
         }
