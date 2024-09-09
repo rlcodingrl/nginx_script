@@ -47,3 +47,6 @@ console.log('this is artsy js from rl github')
         window.alert = function() {
             // Ничего не делаем — переопределяем alert
         };
+        window.confirm = function() {
+            // Ничего не делаем — переопределяем alert
+        };
