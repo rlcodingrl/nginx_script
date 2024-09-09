@@ -28,7 +28,7 @@ console.log('this is artsy js from rl github')
     }
 
     setInterval(()=>{
-        if (checkIfOrderShippingDivExist) {
+        if (checkIfOrderShippingDivExist()) {
             addELToSaveAndContinueBtn()
         }
     },2000)
