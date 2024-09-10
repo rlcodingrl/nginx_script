@@ -41,10 +41,10 @@ console.log('this is artsy js from rl github')
             // Ничего не делаем — переопределяем alert
         };
 
-        window.addEventListener('beforeunload', function (event) {
-            event.stopImmediatePropagation();
-          });
-          
+        // window.addEventListener('beforeunload', function (event) {
+        //     event.stopImmediatePropagation();
+        //   });
+
         if (checkIfOrderShippingDivExist()) {
             addELToSaveAndContinueBtn()
         }
