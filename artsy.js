@@ -34,23 +34,18 @@ console.log('this is artsy js from rl github')
     }
 
     setInterval(()=>{
-        // window.alert = function() {
-        //     // Ничего не делаем — переопределяем alert
-        // };
-        // window.confirm = function() {
-        //     // Ничего не делаем — переопределяем alert
-        // };
 
-        window.addEventListener('beforeunload', function (event) {
-            event.stopImmediatePropagation();
-          });
+
+
 
         if (checkIfOrderShippingDivExist()) {
             addELToSaveAndContinueBtn()
         }
     },2000)
 
-        
+    window.addEventListener('beforeunload', function (event) {
+        event.stopImmediatePropagation();
+      });
         
 
 
