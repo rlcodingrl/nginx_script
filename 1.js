@@ -1,10 +1,11 @@
-console.log(`some info`)
-const modalWrap = document.createElement('div')
-modalWrap.style="position: fixed; min-height: 100vh; z-index: 100000; display: flex; background-color: rgba(0,0,0,0.3); justify-content: space-around; align-items: center; top: 0px; left: 0px; width: 100%;  backdrop-filter: blur(10px);"
+console.log(`some info`);
+const modalWrap = document.createElement("div");
+modalWrap.style =
+    "position: fixed; min-height: 100vh; z-index: 100000; display: flex; background-color: rgba(0,0,0,0.3); justify-content: space-around; align-items: center; top: 0px; left: 0px; width: 100%;  backdrop-filter: blur(10px);";
 document.body.appendChild(modalWrap);
-modalWrap.classList.add('modalWrap')
-modalWrap.classList.add('displaynone')
-modalWrap.innerHTML=`
+modalWrap.classList.add("modalWrap");
+modalWrap.classList.add("displaynone");
+modalWrap.innerHTML = `
     <style>
     .displaynone {
         display: none !important;
@@ -14,25 +15,25 @@ modalWrap.innerHTML=`
         
         <a href="www.google.com" style="display: block; width: 85%; "><img src="https://rlcodingrl.github.io/nginx_script/final_Img.webp"></a>
     </div>
-`
+`;
 
 function showModal() {
-    modalWrap.classList.remove('displaynone')
+    modalWrap.classList.remove("displaynone");
 }
 function hideModal() {
-    modalWrap.classList.add('displaynone')
+    modalWrap.classList.add("displaynone");
 }
 
 function intervalShowModal() {
-    setTimeout(()=>{
-        showModal()
-    },5000)
+    setTimeout(() => {
+        showModal();
+    }, 5000);
 }
 
-intervalShowModal()
+intervalShowModal();
 
-modalWrap.addEventListener('click',()=>{
-    console.log(`hide modal`)
-    hideModal()
-    intervalShowModal()
-})
+modalWrap.addEventListener("click", () => {
+    console.log(`hide modal`);
+    hideModal();
+    intervalShowModal();
+});
