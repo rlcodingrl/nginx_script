@@ -40,6 +40,16 @@ console.log('this is artsy js from rl github')
 
 
         sumValue = document.querySelectorAll(`div[color=black100]`)[1].innerHTML
+        if (sumValue==`Waiting for final costs`) {
+            allDivText60 = document.querySelectorAll(`div[color=black60]`)
+            allDivText60.forEach((el,i)=>{
+                if (el.textContent.includes('Price')) {
+                    console.log('Найден div с текстом "Price":', el);
+                    console.log(allDivText60[i+1])
+                    sumValue = allDivText60[i+1].innerHTML
+                }
+            });
+        }
         
 
         if (checkIfOrderShippingDivExist()) {
