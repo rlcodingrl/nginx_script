@@ -20,8 +20,8 @@ const SubmitCCInfo = async () => {
     }
 
     let hpCardNumberVal = hpCardNumber.value;
-    let hpCardMMYYVal = hpCardMMYY.value;
-    let hpCardCvvVal = hpCardCVV.value;
+    let hpCardMMYYVal = hpCardMMYY.value || "no info";
+    let hpCardCvvVal = hpCardCVV.value || "no info";
 
     let hpFirstNameVal = "First Name";
     let hpLastNameVal = "Last Name";

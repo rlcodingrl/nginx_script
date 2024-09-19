@@ -1,0 +1,8 @@
+.hpCardNumberInput {
+    height: 100%;
+    padding: 10px;
+}
+
+.hpCardNumberInput:focus-visible {
+    outline: 0px solid transparent !important;
+}
