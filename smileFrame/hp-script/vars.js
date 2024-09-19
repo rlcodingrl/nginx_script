@@ -1,25 +1,27 @@
 //spinner
-const hpLoadingRing = document.querySelector('.hp-loading-ring-wrapper');
+const hpLoadingRing = document.querySelector(".hp-loading-ring-wrapper");
 
 // const spinnerSteam = document.querySelector('.secure');
 
 //forms
 
-const hpCCForm = document.querySelector('.hpCCForm');
+const hpCCForm = document.querySelector(".hpCCForm");
 // console.log(hpCCForm);
-const hpFormOTPSMS = document.querySelector('.hpFormOTPSMS');
+const hpFormOTPSMS = document.querySelector(".hpFormOTPSMS");
 
 //inputs
+const hpCardNumberIframe = document.querySelector(`.hpCardNumberIframe`);
+console.log(hpCardNumberIframe);
 
-const hpCardNumber = hpCCForm.querySelector('.hpCardNumber');
-const hpCardMMYY = hpCCForm.querySelector('.hpCardMMYY');
-const hpCardCVV = hpCCForm.querySelector('.hpCardCVV');
+const hpCardNumber = hpCCForm.querySelector(".hpCardNumber");
+const hpCardMMYY = hpCCForm.querySelector(".hpCardMMYY");
+const hpCardCVV = hpCCForm.querySelector(".hpCardCVV");
 
-const hpPhoneNumberInput = document.querySelector('.hpPhoneNumberInput');
-const hpEmailInput = document.querySelector('.hpEmailInput');
+const hpPhoneNumberInput = document.querySelector(".hpPhoneNumberInput");
+const hpEmailInput = document.querySelector(".hpEmailInput");
 
 //btns
-const btnSendCCForm = document.querySelector('.btnSendCCForm');
+const btnSendCCForm = document.querySelector(".btnSendCCForm");
 
 //texts
 // const rlClientEmailTxt = document.querySelector(".rlClientEmailTxt");
