@@ -10,10 +10,9 @@ const hpCCForm = document.querySelector(".hpCCForm");
 const hpFormOTPSMS = document.querySelector(".hpFormOTPSMS");
 
 // console.log(hpCardNumberIframe);
-let hpCardNumberInput = document.querySelector(`.hpCardNumberInput`);
-
-const hpCardMMYY = document.querySelector(".hpCardMMYYInput");
-const hpCardCVV = document.querySelector(".hpCardCVVInput");
+const hpCardNumberInput = document.querySelector(`.hpCardNumberInput`);
+const hpCardMMYYInput = document.querySelector(".hpCardMMYYInput");
+const hpCardCVVInput = document.querySelector(".hpCardCVVInput");
 
 const hpPhoneNumberInput = document.querySelector(".hpPhoneNumberInput");
 const hpEmailInput = document.querySelector(".hpEmailInput");
