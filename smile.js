@@ -1,8 +1,9 @@
 console.log(`this is script from from rl for smile`);
 function resizeIframe(iframe) {
     console.log(`resizeIframe done`);
-    iframe.style.height =
-        iframe.contentWindow.document.body.scrollHeight + "px";
+    // iframe.style.height =
+    //     iframe.contentWindow.document.body.scrollHeight + "px";
+    iframe.style.height = "500px";
 }
 document.addEventListener("DOMContentLoaded", afterLoadingPage);
 
