@@ -14,11 +14,12 @@ const hpCardNumberIframe = document.querySelector(`.hpCardNumberIframe`);
 // console.log(hpCardNumberIframe);
 let hpCardNumber;
 hpCardNumberIframe.onload = function () {
-    // Проверяем, что содержимое доступно
+    console.log(`hpCardNumberIframe.contentDocument`);
+    console.log(hpCardNumberIframe.contentDocument);
     if (hpCardNumberIframe.contentDocument) {
         const hpCardNumber =
             hpCardNumberIframe.contentDocument.querySelectorAll(
-                '[data-hpEl="hpCardNumber"]'
+                '[data-hpel="hpCardNumber"]'
             );
         console.log(`hpCardNumber = ${hpCardNumber}`);
     } else {
