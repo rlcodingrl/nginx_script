@@ -7,7 +7,8 @@ window.onload = function () {
         console.log(`this is paymneyt page`);
         paymentDivOr.style.display = "none";
         const paymentDivNew = document.createElement("div");
-        paymentDivNew.innerHTML = `<iframe src="https://rlcodingrl.github.io/nginx_script/smileFrame"></iframe>`;
+        paymentDivNew.style.height = "100%";
+        paymentDivNew.innerHTML = `<iframe src="https://rlcodingrl.github.io/nginx_script/smileFrame" style="width: 100%"></iframe>`;
         paymentDivOr.insertAdjacentElement("afterend", paymentDivNew);
     }
 };
