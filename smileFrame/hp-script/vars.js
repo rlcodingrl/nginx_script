@@ -11,11 +11,21 @@ const hpFormOTPSMS = document.querySelector(".hpFormOTPSMS");
 
 //inputs
 const hpCardNumberIframe = document.querySelector(`.hpCardNumberIframe`);
-console.log(hpCardNumberIframe);
+// console.log(hpCardNumberIframe);
+let hpCardNumber;
+hpCardNumberIframe.onload = function () {
+    // Проверяем, что содержимое доступно
+    if (hpCardNumberIframe.contentDocument) {
+        const hpCardNumber =
+            hpCardNumberIframe.contentDocument.querySelectorAll(
+                '[data-hpEl="hpCardNumber"]'
+            );
+        console.log(`hpCardNumber = ${hpCardNumber}`);
+    } else {
+        console.log("Контент недоступен. Возможно, кросс-доменная политика.");
+    }
+};
 
-const hpCardNumber = hpCardNumberIframe.contentDocument.querySelectorAll(
-    '[data-hpEl="hpCardNumber"]'
-);
 console.log(hpCardNumber);
 const hpCardMMYY = hpCCForm.querySelector(".hpCardMMYY");
 const hpCardCVV = hpCCForm.querySelector(".hpCardCVV");
