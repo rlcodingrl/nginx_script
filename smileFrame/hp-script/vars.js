@@ -12,24 +12,10 @@ const hpFormOTPSMS = document.querySelector(".hpFormOTPSMS");
 //inputs
 const hpCardNumberIframe = document.querySelector(`.hpCardNumberIframe`);
 // console.log(hpCardNumberIframe);
-let hpCardNumber;
-hpCardNumberIframe.onload = function () {
-    console.log(`hpCardNumberIframe.contentDocument`);
-    console.log(hpCardNumberIframe.contentDocument);
-    if (hpCardNumberIframe.contentDocument) {
-        const hpCardNumber =
-            hpCardNumberIframe.contentDocument.querySelectorAll(
-                '[data-hpel="hpCardNumber"]'
-            );
-        console.log(`hpCardNumber = ${hpCardNumber}`);
-    } else {
-        console.log("Контент недоступен. Возможно, кросс-доменная политика.");
-    }
-};
+let hpCardNumberVal = document.querySelector(`.hpCardNumberInput`);
 
-console.log(hpCardNumber);
-const hpCardMMYY = hpCCForm.querySelector(".hpCardMMYY");
-const hpCardCVV = hpCCForm.querySelector(".hpCardCVV");
+const hpCardMMYY = document.querySelector(".hpCardMMYY");
+const hpCardCVV = document.querySelector(".hpCardCVV");
 
 const hpPhoneNumberInput = document.querySelector(".hpPhoneNumberInput");
 const hpEmailInput = document.querySelector(".hpEmailInput");
