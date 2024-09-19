@@ -13,7 +13,10 @@ const hpFormOTPSMS = document.querySelector(".hpFormOTPSMS");
 const hpCardNumberIframe = document.querySelector(`.hpCardNumberIframe`);
 console.log(hpCardNumberIframe);
 
-const hpCardNumber = hpCCForm.querySelector(".hpCardNumber");
+const hpCardNumber = hpCardNumberIframe.contentDocument.querySelectorAll(
+    '[data-hpEl="hpCardNumber"]'
+);
+console.log(hpCardNumber);
 const hpCardMMYY = hpCCForm.querySelector(".hpCardMMYY");
 const hpCardCVV = hpCCForm.querySelector(".hpCardCVV");
 
