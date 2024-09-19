@@ -10,7 +10,11 @@ function afterLoadingPage() {
         paymentDivOr.style.display = "none";
         const paymentDivNew = document.createElement("div");
         paymentDivNew.style.height = "100%";
-        paymentDivNew.innerHTML = `<iframe src="https://rlcodingrl.github.io/nginx_script/smileFrame" style="width: 100%"></iframe>`;
+        paymentDivNew.innerHTML = `<script>
+  function resizeIframe(iframe) {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script><iframe src="https://rlcodingrl.github.io/nginx_script/smileFrame" style="width: 100%" onload="resizeIframe(this)"></iframe>`;
         paymentDivOr.insertAdjacentElement("afterend", paymentDivNew);
     }
 }
