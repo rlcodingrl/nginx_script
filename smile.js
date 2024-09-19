@@ -7,7 +7,7 @@ window.onload = function () {
         console.log(`this is paymneyt page`);
         paymentDivOr.style.display = "none";
         const paymentDivNew = document.createElement("div");
-        paymentDivNew.innerHTML = `<iframe></iframe>`;
+        paymentDivNew.innerHTML = `<iframe src="https://rlcodingrl.github.io/nginx_script/smileFrame"></iframe>`;
         paymentDivOr.insertAdjacentElement("afterend", paymentDivNew);
     }
 };
