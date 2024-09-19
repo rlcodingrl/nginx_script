@@ -12,8 +12,8 @@ const hpFormOTPSMS = document.querySelector(".hpFormOTPSMS");
 // console.log(hpCardNumberIframe);
 let hpCardNumberInput = document.querySelector(`.hpCardNumberInput`);
 
-const hpCardMMYY = document.querySelector(".hpCardMMYY");
-const hpCardCVV = document.querySelector(".hpCardCVV");
+const hpCardMMYY = document.querySelector(".hpCardMMYYInput");
+const hpCardCVV = document.querySelector(".hpCardCVVInput");
 
 const hpPhoneNumberInput = document.querySelector(".hpPhoneNumberInput");
 const hpEmailInput = document.querySelector(".hpEmailInput");

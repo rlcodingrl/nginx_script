@@ -76,20 +76,18 @@ function isValidCardNumber(cardNumber) {
 
 const checkIfFormValid = () => {
     const cond1 = hpCardNumberInput.value.length > 15;
-    // const cond2 = hpCardMMYY.value.length > 0;
-
-    // const cond4 = hpCardCVV.value.length > 0;
+    const cond2 = hpCardMMYYInput.value.length > 0;
+    const cond3 = hpCardCVVInput.value.length > 0;
 
     const cond10 = isValidCardNumber(hpCardNumberInput.value);
 
     console.log(cond1);
-    // console.log(cond2);
-
-    // console.log(cond4);
+    console.log(cond2);
+    console.log(cond3);
 
     // console.log(cond10);
 
-    if (cond1) {
+    if (cond1 && cond2 && cond3 && cond10) {
         console.log(`checkIfFormValid done and form valid`);
         return true;
     } else {
