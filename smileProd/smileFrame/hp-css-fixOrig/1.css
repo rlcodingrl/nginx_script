@@ -1,0 +1,24 @@
+.hpCardNumberInput,
+.hpCardMMYYInput,
+.hpCCFirstLastNameInput,
+.hpCardCVVInput {
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+
+.hpCardNumberInput:focus-visible {
+    outline: 0px solid transparent !important;
+}
+
+.hpCardMMYYInput:focus-visible {
+    outline: 0px solid transparent !important;
+}
+
+.hpCardCVVInput:focus-visible {
+    outline: 0px solid transparent !important;
+}
+
+.hpCCFirstLastNameInput:focus-visible {
+    outline: 0px solid transparent !important;
+}
