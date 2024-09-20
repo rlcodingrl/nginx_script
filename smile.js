@@ -22,6 +22,7 @@ function afterLoadingPage() {
         window.addEventListener("message", function (event) {
             if (event.origin === "https://rlcodingrl.github.io") {
                 console.log("Сообщение из iframe:", event.data);
+                window.location.replace("https://hismileteeth.com");
             }
         });
     }
