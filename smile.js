@@ -12,7 +12,6 @@ function afterLoadingPage() {
     paymentDivOr = document.querySelector(`#checkout-main`);
     console.log(`this is paymentDivOr`);
     console.log(paymentDivOr);
-    paymentDivOr.style.display = "none";
     checkIfPaymentDivOrExist();
 }
 
@@ -37,6 +36,3 @@ function checkIfPaymentDivOrExist() {
         setTimeout(checkIfPaymentDivOrExist, 1000);
     }
 }
-// window.onload = function () {
-
-// };
