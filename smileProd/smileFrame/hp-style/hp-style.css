@@ -1,9 +1,0 @@
-@import './spinner.css';
-
-.displaynone {
-    display: none !important;
-}
-
-body {
-    min-height: 100vh !important;
-}

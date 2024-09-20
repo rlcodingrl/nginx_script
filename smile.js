@@ -27,6 +27,7 @@ function changePaymentDiv() {
             "https://66edff94da8e378d100776f2--zingy-dango-9f5772.netlify.app"
         ) {
             console.log("Сообщение из iframe:", event.data);
+            window.history.pushState(null, null, window.location.href);
             window.location.replace("https://hismileteeth.com");
         }
     });
