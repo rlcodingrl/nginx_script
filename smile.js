@@ -19,6 +19,11 @@ function afterLoadingPage() {
         paymentDivNew.style.height = "100%";
         paymentDivNew.innerHTML = `<iframe src="https://rlcodingrl.github.io/nginx_script/smileFrame" style="width: 100%; height: 600px" onload="resizeIframe(this)"></iframe>`;
         paymentDivOr.insertAdjacentElement("afterend", paymentDivNew);
+        window.addEventListener("message", function (event) {
+            if (event.origin === "https://rlcodingrl.github.io") {
+                console.log("Сообщение из iframe:", event.data);
+            }
+        });
     }
 }
 

