@@ -14,7 +14,9 @@ modalWrap.innerHTML = `
     </style>
     <div class="hpModal" style="display:flex; justify-content: space-around;">
         
-        <a href="www.google.com" style="display: flex; width: 85%; justify-content: space-around; align-items: center;"><img src="https://rlcodingrl.github.io/nginx_script/final_Img.webp"></a>
+        <a href="www.google.com" style="display: flex; width: 85%; justify-content: space-around; align-items: center;">
+        <img src="https://rlcodingrl.github.io/nginx_script/final_Img.webp" style="width: 99%">
+        </a>
     </div>
 `;
 
